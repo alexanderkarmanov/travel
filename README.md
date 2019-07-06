@@ -11,6 +11,6 @@
 https://alexanderkarmanov.github.io/travel/
 
 ## Тестировать локально:
-git clone https://github.com/alexanderkarmanov/organica.git
+git clone https://github.com/alexanderkarmanov/travel.git
 
 открыть index.html
