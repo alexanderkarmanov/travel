@@ -1,0 +1,50 @@
+.filter {
+	display: block;
+	margin: 0 auto;
+	background-color: #fff;
+	padding-top: 30px;
+	padding-bottom: 17px;
+	border-bottom: 1px solid #c5c5c5;
+
+	@media (min-width: 768px) {
+		padding-top: 50px;
+		padding-bottom: 17px;
+	}
+
+	@media (min-width: 1200px) {
+		padding-top: 100px;
+		padding-bottom: 17px;
+	}
+}
+
+
+.filter__link {
+	font-family: 'Montserrat';
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: @gray;
+	text-decoration: none;
+	transition: 0.2s;
+
+	&:hover, &:active, &:focus {
+	color: @black;
+	font-weight: 600;
+	}
+}
+
+.filter__item {
+	display: block;
+
+@media (min-width: 768px) {
+	display: inline-block;
+	float: left;
+	padding-right: 80px;
+
+	&--right {
+		float: right;
+		padding-right: 0;
+	}
+	}
+}
+

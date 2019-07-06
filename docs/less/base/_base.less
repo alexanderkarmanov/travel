@@ -1,0 +1,130 @@
+html, body {
+	height: 100%;
+	min-width: 320px;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 10px;
+	line-height: 1.4;
+}
+
+body {
+	font-size: 1.6rem; /* 10px * 1.6 = 16px */
+	font-family: 'Noto Sans';
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+ul, li {
+	padding: 0;
+	margin: 0;
+}
+
+input {
+	padding: 0;
+	margin: 0;
+}
+
+.block_section {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: yellow;
+}
+
+.block__content {
+	padding: 10px;
+	background-color: #20B2AA;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.line {
+	border: 1px solid #e9eff3;
+}
+
+
+
+.wrapper {
+	// width: 260px;
+	width: 100%;
+	padding: 0px 20px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	// background-color: red;
+
+	/* Small Devices, Tablets - adaptive styles bofore 768px */
+@media only screen and (min-width : 768px) {
+	justify-content: space-between;
+	width: 650px;
+}
+
+/* Medium Devices, Desktops - adaptive styles bofore 992px */
+@media only screen and (min-width : 992px) {
+	width: 850px;
+}
+
+/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
+@media only screen and (min-width : 1200px) {
+	width: 1100px;
+}
+
+/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
+@media only screen and (min-width : 1500px) {
+	width: 1430px;
+}
+}
+
+p {
+	font-family: 'Playfair Display', serif;
+	font-size: 12px;
+	color: @gray;
+	letter-spacing: 0.6px;
+	line-height: 2;
+
+	@media (min-width: 992px) {
+		font-size: 16px;
+	}
+}
+
+
+
+
+
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
+@media only screen and (min-width : 1200px) {
+	
+}
+
+/* Medium Devices, Desktops - adaptive styles bofore 992px */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets - adaptive styles bofore 768px */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones - adaptive styles bofore 480px */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina - adaptive styles bofore 320px */
+@media only screen and (max-width : 320px) {
+
+}

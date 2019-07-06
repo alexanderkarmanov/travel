@@ -1,0 +1,244 @@
+.sidebar {
+	text-align: center;
+	width: 100%;
+	margin-bottom: 10px;
+	
+/* Small Devices, Tablets - adaptive styles bofore 768px */
+@media only screen and (min-width : 768px) {
+	width: 47%;
+}
+
+/* Medium Devices, Desktops - adaptive styles bofore 992px */
+@media only screen and (min-width : 992px) {
+	width: 35%;
+}
+
+/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
+@media only screen and (min-width : 1200px) {
+	// width: 1100px;
+}
+
+/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
+@media only screen and (min-width : 1500px) {
+	width: 35%;
+}
+}
+
+.sidebar-box {
+	border-radius: 11px;
+	height: auto;
+
+	@media (min-width: 768px) {
+	background-color: #fafafa;
+	padding: 20px;	
+	box-shadow: 0px 5px 27px 0px rgba(0, 0, 0, 0.08);
+	}
+
+	@media (min-width: 1500px) {
+		padding: 44px 55px 55px;
+	}
+}
+
+.sidebar-block {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 5px 27px 0px rgba(0, 0, 0, .08);
+
+	padding-top: 30px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	@media (min-width: 1500px) {
+		padding-top: 60px;
+		padding-bottom: 40px;
+		padding-left: 39px;
+		padding-right: 39px;
+	}
+
+	margin-bottom: 40px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&--left {
+		text-align: left;
+		padding-top: 20px;
+
+		@media (min-width: 1500px) {
+		padding-top: 40px;
+		}
+	}
+
+	p {
+		margin-bottom: 15px;
+	}
+}
+
+.pop-article {
+	display: flex;
+	padding-bottom: 25px;
+	border-bottom: 1px dotted @black;
+	margin-bottom: 20px;
+	justify-content: left;
+
+	&:last-child {
+		border-bottom: none;
+		padding-bottom: 0px;
+		margin-bottom: 0;
+	}
+}
+
+.pop-article__img {
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+	overflow: hidden;
+
+
+	@media (min-width: 1200px) {
+	width: 75px;
+	height: 75px;
+	}
+	
+}
+
+.pop-article-content__title {
+	font-family: 'Playfair Display', serif;
+	line-height: 20px;
+	letter-spacing: 0.6px;
+	color: @black;
+	margin-bottom: 10px;
+	font-size: 12px;
+
+	@media (min-width: 1200px) {
+	font-size: 17px;
+	line-height: 26px;
+	}
+}
+
+.pop-article-content__autor {
+	font-family: 'Playfair Display', serif;
+	font-size: 14px;
+	letter-spacing: 1.6px;
+	font-style: italic;
+	color: @light;
+}
+
+.pop-article-content {
+	margin-left: 15px;
+	width: 70%;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	@media (min-width: 768px) {
+		justify-content: space-between;
+	}
+}
+
+.gallery__image {
+	width: 230px;
+ 	height: 120px;
+	background-color: @gray;
+	background-image: url(../img/placeholders/project_placeholder.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	border-radius: 5px;
+	margin: 0px 7px 15px;
+	overflow: hidden;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	@media (min-width: 768px) {
+	width: 230px;
+ 	height: 130px;
+	}
+	@media (min-width: 992px) {
+ 	height: 125px;
+	}
+
+	@media (min-width: 1200px) {
+	width: 140px;
+ 	height: 91px;
+	margin: 0px;
+	margin-bottom: 9px;
+
+	}
+
+	@media (min-width: 1500px) {
+	width: 145px;
+ 	height: 91px;
+	}
+	
+}
+
+.comment {}
+
+.comment__avatar {
+	width: 115px;
+	height: 115px;
+	border-radius: 60px;
+}
+
+.comment__name {
+	font-family: 'Montserrat';
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 32px;
+	letter-spacing: .6px;
+	color: @black;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.styles {}
+
+.styles__subtitle {
+	font-family: 'Montserrat';
+	font-size: 16px;
+	color: @black;
+	text-transform: uppercase;
+	letter-spacing: .25px;
+	border-bottom: 1px solid @gray;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+
+	&--pop {
+		margin-bottom: 30px;
+
+		span {
+			text-transform: none;
+		}
+	}
+}
+
+.styles__item {
+	margin-bottom: 15px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.styles__link {
+	text-decoration: none;
+	font-family: 'Playfair Display', serif;
+	font-size: 17px;
+	color: @gray;
+	letter-spacing: 0.25px;
+	line-height: 32px;
+	transition: 0.2s;
+
+	&:hover, &:active, &:focus {
+		color: @black;
+	}
+}

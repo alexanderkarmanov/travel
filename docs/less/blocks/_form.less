@@ -1,0 +1,69 @@
+.footer-form {
+	display: flex;
+	justify-content: space-between;
+
+	@media (min-width: 768px) {
+	width: 33%;
+	}
+}
+
+.footer-form-input__text {
+	font-family: 'Playfair Display', serif;
+	font-size: 16px;
+	color: @gray;
+	text-align: left;
+	line-height: 1;
+	border: 0px;
+	padding-top: 17px;
+	padding-bottom: 15px;
+	width: 100%;
+	border: 1px solid @olive;
+	background-color: #fff;
+	padding-left: 30px;
+
+	@media (min-width: 992px) {
+	padding-left: 30px;
+	padding-right: 45px;
+	}
+}
+
+.footer-form-input {
+	width: 85%;
+
+	@media (min-width: 500px) {
+		width: 95%;
+	}
+}
+
+.footer-form__button {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 1;
+	transition: 0.2s;
+	border: 0px;
+	background-color: @olive;
+	padding: 17px 35px;
+	background-image: url(../img/email_white.png);
+	background-repeat: no-repeat;
+	background-position: center;
+
+	&:hover, &:active, &:focus {
+	color: @black;
+	background-image: url(../img/email_black.png);
+
+	}
+
+	i {
+	background-color: #d3c4a6;
+	padding: 14px 20px;
+	}
+}
+
+label.error {
+	display: block;
+	font-family: 'Playfair Display', serif;
+	font-size: 14px;
+	color: #B22222;
+	margin-top: 10px;
+	text-align: left;
+}
